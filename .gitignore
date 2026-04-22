@@ -1,0 +1,39 @@
+# --- Yocto upstream layers (do NOT track) ---
+yocto/poky/
+yocto/meta-openembedded/
+yocto/meta-ti/
+
+# --- Yocto build output (huge, must ignore) ---
+yocto/build/
+yocto/tmp/
+yocto/sstate-cache/
+yocto/downloads/
+
+# --- STM32CubeIDE build artifacts ---
+mcu-firmware/Debug/
+mcu-firmware/Release/
+*.launch
+*.mxproject
+*.ioc
+
+# --- Qt Creator / Qt build artifacts ---
+qt-ui/build-*/
+*.pro.user
+*.qmake.stash
+
+# --- Python cache ---
+__pycache__/
+*.pyc
+
+# --- CMake build files ---
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# --- Logs ---
+*.log
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
